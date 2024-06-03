@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		97C9A7312C0DD6200037081C /* testify.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C9A7302C0DD6200037081C /* testify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97C9A7382C0DDAF10037081C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9A7372C0DDAF10037081C /* Validator.swift */; };
+		97C9A73A2C0DDB310037081C /* Products in Resources */ = {isa = PBXBuildFile; fileRef = 97C9A7392C0DDB310037081C /* Products */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97C9A72D2C0DD6200037081C /* testify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = testify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C9A7302C0DD6200037081C /* testify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testify.h; sourceTree = "<group>"; };
+		97C9A7372C0DDAF10037081C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		97C9A7392C0DDB310037081C /* Products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Products; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				97C9A72F2C0DD6200037081C /* testify */,
+				97C9A7392C0DDB310037081C /* Products */,
 				97C9A72E2C0DD6200037081C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				97C9A7302C0DD6200037081C /* testify.h */,
+				97C9A7372C0DDAF10037081C /* Validator.swift */,
 			);
 			path = testify;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					97C9A72C2C0DD6200037081C = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -119,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C9A73A2C0DDB310037081C /* Products in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C9A7382C0DDAF10037081C /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 		97C9A7352C0DD6200037081C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -286,6 +296,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,6 +305,7 @@
 		97C9A7362C0DD6200037081C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

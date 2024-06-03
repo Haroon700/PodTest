@@ -1,0 +1,11 @@
+framework module testify {
+  umbrella header "testify.h"
+  export *
+
+  module * { export * }
+}
+
+module testify.Swift {
+  header "testify-Swift.h"
+  requires objc
+}
